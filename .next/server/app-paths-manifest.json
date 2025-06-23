@@ -1,15 +1,15 @@
 {
   "/api/imagekit/route": "app/api/imagekit/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/api/workflows/onboarding/route": "app/api/workflows/onboarding/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/too-fast/page": "app/too-fast/page.js",
   "/(auth)/sign-in/page": "app/(auth)/sign-in/page.js",
-  "/(root)/books/[id]/page": "app/(root)/books/[id]/page.js",
   "/(auth)/sign-up/page": "app/(auth)/sign-up/page.js",
+  "/(root)/books/[id]/page": "app/(root)/books/[id]/page.js",
   "/(root)/my-profile/page": "app/(root)/my-profile/page.js",
   "/admin/books/new/page": "app/admin/books/new/page.js",
+  "/admin/books/page": "app/admin/books/page.js",
   "/(root)/page": "app/(root)/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/admin/books/page": "app/admin/books/page.js"
+  "/admin/page": "app/admin/page.js"
 }
