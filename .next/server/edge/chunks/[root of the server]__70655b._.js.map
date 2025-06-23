@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/middleware.ts"],"sourcesContent":["// export { auth as middleware } from \"@/auth\";\r\n\r\nexport function middleware() {\r\n  // Empty middleware for now\r\n}\r\n\r\nexport const config = {\r\n  matcher: [] // Empty matcher means no routes will be processed\r\n};\r\n"],"names":[],"mappings":"AAAA,+CAA+C;;;;;AAExC,SAAS;AACd,2BAA2B;AAC7B;AAEO,MAAM,SAAS;IACpB,SAAS,EAAE,CAAC,kDAAkD;AAChE"}},
-    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
