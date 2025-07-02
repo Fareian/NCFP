@@ -1,0 +1,16 @@
+{
+  "node": {
+    "7f14bcdb45104150838ada2e05704bc2da132affe8": {
+      "workers": {
+        "app/admin/books/new/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/books/new/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/admin/actions/book.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/books/new/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

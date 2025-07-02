@@ -1,0 +1,27 @@
+/* [project]/app/bebasneue_e241ff84.module.css [app-client] (css) */
+@font-face {
+  font-family: bebasNeue;
+  src: url("../media/BebasNeue_Regular-s.p.832d4418.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: bebasNeue Fallback;
+  src: local(Arial);
+  ascent-override: 116.72%;
+  descent-override: 38.91%;
+  line-gap-override: 0.0%;
+  size-adjust: 77.11%;
+}
+
+.bebasneue_e241ff84-module__t1bZpq__className {
+  font-family: bebasNeue, bebasNeue Fallback;
+}
+
+.bebasneue_e241ff84-module__t1bZpq__variable {
+  --bebas-neue: "bebasNeue", "bebasNeue Fallback";
+}
+
+/*# sourceMappingURL=app_bebasneue_e241ff84_module_b52d8e.css.map*/
