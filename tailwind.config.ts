@@ -97,6 +97,13 @@ export default {
         gray: {
           100: "#CBD5E1",
         },
+        brand: {
+          navy: "#1a237e", // Deep navy
+          blue: "#25388C", // Royal blue
+          indigo: "#3f51b5", // Muted indigo
+          gold: "#E7C9A5", // Soft gold
+        },
+        // Usage: className="bg-brand-navy text-brand-gold"
       },
       screens: {
         xs: "480px",

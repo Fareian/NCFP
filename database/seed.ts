@@ -4,6 +4,7 @@ import { books } from "@/database/schema";
 import { neon } from "@neondatabase/serverless";
 import { drizzle } from "drizzle-orm/neon-http";
 import { config } from "dotenv";
+import { randomUUID } from "crypto";
 
 config({ path: ".env.local" });
 
@@ -45,16 +46,19 @@ const seed = async () => {
         "/books/covers",
       )) as string;
 
-      const videoUrl = (await uploadToImageKit(
-        book.videoUrl,
-        `${book.title}.mp4`,
-        "/books/videos",
-      )) as string;
+      // Generate a new unique UUID for each book
+      const id = randomUUID();
 
       await db.insert(books).values({
-        ...book,
+        id,
+        title: book.title,
+        author: book.author,
+        category: book.category,
         coverUrl,
-        videoUrl,
+        coverColor: book.coverColor,
+        description: book.description,
+        fileUrl: book.file_url, // map file_url to fileUrl
+        summary: book.summary,
       });
     }
 

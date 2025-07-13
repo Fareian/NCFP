@@ -22,6 +22,20 @@
       "when": 1749835033743,
       "tag": "0002_even_night_nurse",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1751886242445,
+      "tag": "0003_mighty_prodigy",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1752064848881,
+      "tag": "0004_normal_shinko_yamashiro",
+      "breakpoints": true
     }
   ]
 }

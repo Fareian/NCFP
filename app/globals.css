@@ -38,7 +38,7 @@
 
   /* Book Card */
   .book-title {
-    @apply mt-2 line-clamp-1 text-base font-semibold text-white xs:text-xl;
+    @apply mt-2 line-clamp-1 text-base font-semibold xs:text-xl;
   }
 
   .book-genre {
@@ -94,7 +94,7 @@
   }
 
   .book-overview h1 {
-    @apply text-5xl font-semibold text-white md:text-7xl;
+    @apply text-5xl font-semibold md:text-7xl;
   }
 
   .book-info {
@@ -291,11 +291,11 @@
 
   /* Book Details */
   .book-details {
-    @apply lg:mt-36 mt-16 mb-20 flex flex-col gap-16 lg:flex-row;
+    @apply mb-10 flex flex-col gap-16 lg:flex-row;
   }
 
   .book-details h3 {
-    @apply text-xl font-semibold text-primary;
+    @apply text-xl font-semibold;
   }
 
   /* Library */

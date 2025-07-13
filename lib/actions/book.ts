@@ -1,51 +1,46 @@
 "use server";
 
 import { db } from "@/database/drizzle";
-import { books, borrowRecords } from "@/database/schema";
+import { books } from "@/database/schema";
 import { eq } from "drizzle-orm";
-import dayjs from "dayjs";
 
-export const borrowBook = async (params: BorrowBookParams) => {
-  const { userId, bookId } = params;
-
+export const createBook = async (params: BookParams) => {
   try {
-    const book = await db
-      .select({ availableCopies: books.availableCopies })
-      .from(books)
-      .where(eq(books.id, bookId))
-      .limit(1);
-
-    if (!book.length || book[0].availableCopies <= 0) {
-      return {
-        success: false,
-        error: "Book is not available for borrowing",
-      };
-    }
-
-    const dueDate = dayjs().add(7, "day").toDate().toDateString();
-
-    const record = await db.insert(borrowRecords).values({
-      userId,
-      bookId,
-      dueDate,
-      status: "BORROWED",
-    });
-
-    await db
-      .update(books)
-      .set({ availableCopies: book[0].availableCopies - 1 })
-      .where(eq(books.id, bookId));
+    const newBook = await db
+      .insert(books)
+      .values({
+        ...params,
+      })
+      .returning();
 
     return {
       success: true,
-      data: JSON.parse(JSON.stringify(record)),
+      data: JSON.parse(JSON.stringify(newBook[0])),
     };
   } catch (error) {
     console.log(error);
-
     return {
       success: false,
-      error: "An error occurred while borrowing the book",
+      message: "An error occurred while creating the book",
     };
+  }
+};
+
+export const getBookById = async (id: string) => {
+  try {
+    const book = await db.select().from(books).where(eq(books.id, id)).limit(1);
+    return book[0] || null;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+
+export const getBooks = async (limit = 10) => {
+  try {
+    return await db.select().from(books).limit(limit);
+  } catch (error) {
+    console.log(error);
+    return [];
   }
 };

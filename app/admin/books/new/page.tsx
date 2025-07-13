@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import BookForm from "@/components/admin/forms/BookForm";
+import BookForm from "@/components/books/BookForm";
 
 const Page = () => {
   return (

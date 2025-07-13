@@ -2,17 +2,14 @@ interface Book {
   id: string;
   title: string;
   author: string;
-  genre: string;
-  rating: number;
-  totalCopies: number;
-  availableCopies: number;
+  category: string;
   description: string;
   coverColor: string;
   coverUrl: string;
-  videoUrl: string;
   summary: string;
   createdAt: Date | null;
-  isLoanedBook?: boolean;  
+  isLoanedBook?: boolean;
+  fileUrl: string; // Added for download functionality
 }
 
 interface AuthCredentials {
@@ -24,17 +21,8 @@ interface AuthCredentials {
 interface BookParams {
   title: string;
   author: string;
-  genre: string;
-  rating: number;
-  coverUrl: string;
-  coverColor: string;
+  category: string;
   description: string;
-  totalCopies: number;
-  videoUrl: string;
   summary: string;
-}
-
-interface BorrowBookParams {
-  bookId: string;
-  userId: string;
+  fileUrl: string; // Added for download functionality
 }

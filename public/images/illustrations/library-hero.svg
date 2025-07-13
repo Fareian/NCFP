@@ -1,0 +1,84 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F8FAFC"/>
+  
+  <!-- Bookshelf -->
+  <rect x="100" y="150" width="400" height="200" fill="#1E293B"/>
+  <rect x="110" y="160" width="380" height="180" fill="#334155"/>
+  
+  <!-- Shelf dividers -->
+  <line x1="110" y1="220" x2="490" y2="220" stroke="#1E293B" stroke-width="2"/>
+  <line x1="110" y1="280" x2="490" y2="280" stroke="#1E293B" stroke-width="2"/>
+  
+  <!-- Books -->
+  <rect x="120" y="170" width="15" height="40" fill="#F59E0B"/>
+  <rect x="140" y="170" width="15" height="40" fill="#EF4444"/>
+  <rect x="160" y="170" width="15" height="40" fill="#10B981"/>
+  <rect x="180" y="170" width="15" height="40" fill="#3B82F6"/>
+  <rect x="200" y="170" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="220" y="170" width="15" height="40" fill="#F59E0B"/>
+  <rect x="240" y="170" width="15" height="40" fill="#EF4444"/>
+  <rect x="260" y="170" width="15" height="40" fill="#10B981"/>
+  <rect x="280" y="170" width="15" height="40" fill="#3B82F6"/>
+  <rect x="300" y="170" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="320" y="170" width="15" height="40" fill="#F59E0B"/>
+  <rect x="340" y="170" width="15" height="40" fill="#EF4444"/>
+  <rect x="360" y="170" width="15" height="40" fill="#10B981"/>
+  <rect x="380" y="170" width="15" height="40" fill="#3B82F6"/>
+  <rect x="400" y="170" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="420" y="170" width="15" height="40" fill="#F59E0B"/>
+  <rect x="440" y="170" width="15" height="40" fill="#EF4444"/>
+  <rect x="460" y="170" width="15" height="40" fill="#10B981"/>
+  
+  <!-- Second row books -->
+  <rect x="120" y="230" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="140" y="230" width="15" height="40" fill="#F59E0B"/>
+  <rect x="160" y="230" width="15" height="40" fill="#EF4444"/>
+  <rect x="180" y="230" width="15" height="40" fill="#10B981"/>
+  <rect x="200" y="230" width="15" height="40" fill="#3B82F6"/>
+  <rect x="220" y="230" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="240" y="230" width="15" height="40" fill="#F59E0B"/>
+  <rect x="260" y="230" width="15" height="40" fill="#EF4444"/>
+  <rect x="280" y="230" width="15" height="40" fill="#10B981"/>
+  <rect x="300" y="230" width="15" height="40" fill="#3B82F6"/>
+  <rect x="320" y="230" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="340" y="230" width="15" height="40" fill="#F59E0B"/>
+  <rect x="360" y="230" width="15" height="40" fill="#EF4444"/>
+  <rect x="380" y="230" width="15" height="40" fill="#10B981"/>
+  <rect x="400" y="230" width="15" height="40" fill="#3B82F6"/>
+  <rect x="420" y="230" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="440" y="230" width="15" height="40" fill="#F59E0B"/>
+  <rect x="460" y="230" width="15" height="40" fill="#EF4444"/>
+  
+  <!-- Third row books -->
+  <rect x="120" y="290" width="15" height="40" fill="#10B981"/>
+  <rect x="140" y="290" width="15" height="40" fill="#3B82F6"/>
+  <rect x="160" y="290" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="180" y="290" width="15" height="40" fill="#F59E0B"/>
+  <rect x="200" y="290" width="15" height="40" fill="#EF4444"/>
+  <rect x="220" y="290" width="15" height="40" fill="#10B981"/>
+  <rect x="240" y="290" width="15" height="40" fill="#3B82F6"/>
+  <rect x="260" y="290" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="280" y="290" width="15" height="40" fill="#F59E0B"/>
+  <rect x="300" y="290" width="15" height="40" fill="#EF4444"/>
+  <rect x="320" y="290" width="15" height="40" fill="#10B981"/>
+  <rect x="340" y="290" width="15" height="40" fill="#3B82F6"/>
+  <rect x="360" y="290" width="15" height="40" fill="#8B5CF6"/>
+  <rect x="380" y="290" width="15" height="40" fill="#F59E0B"/>
+  <rect x="400" y="290" width="15" height="40" fill="#EF4444"/>
+  <rect x="420" y="290" width="15" height="40" fill="#10B981"/>
+  <rect x="440" y="290" width="15" height="40" fill="#3B82F6"/>
+  <rect x="460" y="290" width="15" height="40" fill="#8B5CF6"/>
+  
+  <!-- Cross decoration -->
+  <path d="M500 80L500 110M485 95L515 95" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Light rays -->
+  <path d="M300 50L280 100M300 50L320 100M300 50L300 100" stroke="#FEF3C7" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Floating books -->
+  <rect x="50" y="100" width="20" height="30" rx="3" fill="#F59E0B" transform="rotate(-15 50 100)"/>
+  <rect x="530" y="120" width="20" height="30" rx="3" fill="#EF4444" transform="rotate(15 530 120)"/>
+  <rect x="40" y="200" width="20" height="30" rx="3" fill="#10B981" transform="rotate(-10 40 200)"/>
+  <rect x="540" y="180" width="20" height="30" rx="3" fill="#3B82F6" transform="rotate(10 540 180)"/>
+</svg> 

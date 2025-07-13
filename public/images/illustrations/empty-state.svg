@@ -1,0 +1,22 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#F8FAFC"/>
+  
+  <!-- Empty bookshelf -->
+  <rect x="50" y="80" width="200" height="100" fill="#E2E8F0"/>
+  <rect x="60" y="90" width="180" height="80" fill="#F1F5F9"/>
+  
+  <!-- Shelf dividers -->
+  <line x1="60" y1="120" x2="240" y2="120" stroke="#CBD5E1" stroke-width="1"/>
+  <line x1="60" y1="150" x2="240" y2="150" stroke="#CBD5E1" stroke-width="1"/>
+  
+  <!-- Question mark -->
+  <circle cx="150" cy="60" r="20" fill="#F59E0B" fill-opacity="0.2"/>
+  <text x="150" y="70" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#F59E0B">?</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="40" r="2" fill="#F59E0B" fill-opacity="0.3"/>
+  <circle cx="220" cy="50" r="2" fill="#F59E0B" fill-opacity="0.3"/>
+  <circle cx="70" cy="160" r="2" fill="#F59E0B" fill-opacity="0.3"/>
+  <circle cx="230" cy="170" r="2" fill="#F59E0B" fill-opacity="0.3"/>
+</svg> 

@@ -57,15 +57,11 @@ export const sampleBooks = [
     id: "1",
     title: "The Midnight Library",
     author: "Matt Haig",
-    genre: "Fantasy / Fiction",
-    rating: 4.6,
-    totalCopies: 20,
-    availableCopies: 10,
+    category: "Fantasy / Fiction",
     description:
       "A dazzling novel about all the choices that go into a life well lived, The Midnight Library tells the story of Nora Seed as she finds herself between life and death.",
     coverColor: "#1c1f40",
     coverUrl: "https://m.media-amazon.com/images/I/81J6APjwxlL.jpg",
-    videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "A dazzling novel about all the choices that go into a life well lived, The Midnight Library tells the story of Nora Seed as she finds herself between life and death. A dazzling novel about all the choices that go into a life well lived, The Midnight Library tells the story of Nora Seed as she finds herself between life and death.",
     createdAt: new Date(),
@@ -74,15 +70,11 @@ export const sampleBooks = [
     id: "2",
     title: "Atomic Habits",
     author: "James Clear",
-    genre: "Self-Help / Productivity",
-    rating: 4.9,
-    totalCopies: 99,
-    availableCopies: 50,
+    category: "Self-Help / Productivity",
     description:
       "A revolutionary guide to making good habits, breaking bad ones, and getting 1% better every day.",
     coverColor: "#fffdf6",
     coverUrl: "https://m.media-amazon.com/images/I/81F90H7hnML.jpg",
-    videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "A revolutionary guide to making good habits, breaking bad ones, and getting 1% better every day.",
     createdAt: new Date(),
@@ -91,16 +83,12 @@ export const sampleBooks = [
     id: "3",
     title: "You Don't Know JS: Scope & Closures",
     author: "Kyle Simpson",
-    genre: "Computer Science / JavaScript",
-    rating: 4.7,
-    totalCopies: 9,
-    availableCopies: 5,
+    category: "Computer Science / JavaScript",
     description:
       "An essential guide to understanding the core mechanisms of JavaScript, focusing on scope and closures.",
     coverColor: "#f8e036",
     coverUrl:
       "https://m.media-amazon.com/images/I/7186YfjgHHL._AC_UF1000,1000_QL80_.jpg",
-    videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "An essential guide to understanding the core mechanisms of JavaScript, focusing on scope and closures.",
     createdAt: new Date(),
@@ -109,16 +97,12 @@ export const sampleBooks = [
     id: "4",
     title: "The Alchemist",
     author: "Paulo Coelho",
-    genre: "Philosophy / Adventure",
-    rating: 4.5,
-    totalCopies: 78,
-    availableCopies: 50,
+    category: "Philosophy / Adventure",
     description:
       "A magical tale of Santiago, an Andalusian shepherd boy, who embarks on a journey to find a worldly treasure.",
     coverColor: "#ed6322",
     coverUrl:
       "https://m.media-amazon.com/images/I/61HAE8zahLL._AC_UF1000,1000_QL80_.jpg",
-    videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "A magical tale of Santiago, an Andalusian shepherd boy, who embarks on a journey to find a worldly treasure.",
     createdAt: new Date(),
@@ -127,15 +111,11 @@ export const sampleBooks = [
     id: "5",
     title: "Deep Work",
     author: "Cal Newport",
-    genre: "Self-Help / Productivity",
-    rating: 4.7,
-    totalCopies: 23,
-    availableCopies: 23,
+    category: "Self-Help / Productivity",
     description:
       "Rules for focused success in a distracted world, teaching how to cultivate deep focus to achieve peak productivity.",
     coverColor: "#ffffff",
     coverUrl: "https://m.media-amazon.com/images/I/81JJ7fyyKyS.jpg",
-    videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Rules for focused success in a distracted world, teaching how to cultivate deep focus to achieve peak productivity.",
     createdAt: new Date(),
@@ -144,16 +124,12 @@ export const sampleBooks = [
     id: "6",
     title: "Clean Code",
     author: "Robert C. Martin",
-    genre: "Computer Science / Programming",
-    rating: 4.8,
-    totalCopies: 56,
-    availableCopies: 56,
+    category: "Computer Science / Programming",
     description:
       "A handbook of agile software craftsmanship, offering best practices and principles for writing clean and maintainable code.",
     coverColor: "#080c0d",
     coverUrl:
       "https://m.media-amazon.com/images/I/71T7aD3EOTL._UF1000,1000_QL80_.jpg",
-    videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "A handbook of agile software craftsmanship, offering best practices and principles for writing clean and maintainable code.",
     createdAt: new Date(),
@@ -162,16 +138,12 @@ export const sampleBooks = [
     id: "7",
     title: "The Pragmatic Programmer",
     author: "Andrew Hunt, David Thomas",
-    genre: "Computer Science / Programming",
-    rating: 4.8,
-    totalCopies: 25,
-    availableCopies: 3,
+    category: "Computer Science / Programming",
     description:
       "A timeless guide for developers to hone their skills and improve their programming practices.",
     coverColor: "#100f15",
     coverUrl:
       "https://m.media-amazon.com/images/I/71VStSjZmpL._AC_UF1000,1000_QL80_.jpg",
-    videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "A timeless guide for developers to hone their skills and improve their programming practices.",
     createdAt: new Date(),
@@ -180,16 +152,12 @@ export const sampleBooks = [
     id: "8",
     title: "The Psychology of Money",
     author: "Morgan Housel",
-    genre: "Finance / Self-Help",
-    rating: 4.8,
-    totalCopies: 10,
-    availableCopies: 5,
+    category: "Finance / Self-Help",
     description:
       "Morgan Housel explores the unique behaviors and mindsets that shape financial success and decision-making.",
     coverColor: "#ffffff",
     coverUrl:
       "https://m.media-amazon.com/images/I/81Dky+tD+pL._AC_UF1000,1000_QL80_.jpg",
-    videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Morgan Housel explores the unique behaviors and mindsets that shape financial success and decision-making.",
     createdAt: new Date(),

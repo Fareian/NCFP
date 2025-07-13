@@ -1,0 +1,3 @@
+    --  ALTER TABLE "books" DROP COLUMN IF EXISTS "available_copies";
+    --  ALTER TABLE "books" DROP COLUMN IF EXISTS "total_copies";
+    --  ALTER TABLE "books" DROP COLUMN IF EXISTS "rating";

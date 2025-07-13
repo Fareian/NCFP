@@ -16,6 +16,14 @@ const nextConfig: NextConfig = {
         hostname: "ik.imagekit.io",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "vercel.app",
+      },
+      {
+        protocol: "https",
+        hostname: "vercel.com",
+      },
     ],
   },
   typescript: {
@@ -23,6 +31,17 @@ const nextConfig: NextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  // Production optimizations
+  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
+  swcMinify: true,
+  // Handle trailing slashes
+  trailingSlash: false,
+  // Asset optimization
+  experimental: {
+    optimizeCss: true,
   },
 };
 

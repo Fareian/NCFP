@@ -9,7 +9,6 @@ export const createBook = async (params: BookParams) => {
       .insert(books)
       .values({
         ...params,
-        availableCopies: params.totalCopies,
       })
       .returning();
 
