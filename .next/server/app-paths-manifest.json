@@ -2,5 +2,6 @@
   "/(root)/page": "app/(root)/page.js",
   "/api/homepage/route": "app/api/homepage/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/(root)/all-books/page": "app/(root)/all-books/page.js"
+  "/(root)/all-books/page": "app/(root)/all-books/page.js",
+  "/(auth)/sign-in/page": "app/(auth)/sign-in/page.js"
 }
