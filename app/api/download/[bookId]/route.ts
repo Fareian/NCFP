@@ -36,8 +36,10 @@ export async function GET(req: NextRequest, { params }: { params: { bookId: stri
     return new NextResponse("Failed to fetch file from ImageKit", { status: 502 });
   }
 
-  // Set headers for download
-  const fileName = book.title.replace(/[^a-z0-9]/gi, "_").toLowerCase() + ".pdf";
+  // Extract file extension from fileUrl
+  const extMatch = book.fileUrl.match(/\.([a-zA-Z0-9]+)(\?|$)/);
+  const ext = extMatch ? extMatch[1] : "pdf";
+  const fileName = book.title.replace(/[^a-z0-9]/gi, "_").toLowerCase() + "." + ext;
   const headers = new Headers(fileResponse.headers);
   headers.set("Content-Disposition", `attachment; filename=\"${fileName}\"`);
 

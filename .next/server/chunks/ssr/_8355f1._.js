@@ -277,16 +277,38 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useFileSize$2e$ts__
 ;
 ;
 ;
-function DownloadButton({ bookName, bookAuthor, fileUrl, fileType }) {
+function DownloadButton({ bookId, fileUrl, fileType }) {
     const fileSize = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useFileSize$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFileSize"])(fileUrl);
-    const handleClick = (e)=>{
+    const handleClick = async (e)=>{
         e.preventDefault();
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"])({
             title: "Download started",
             description: "Your book is downloading."
         });
-        // Open the API download route in a new tab to trigger the download
-        window.open(`https://ik.imagekit.io/newCreation/books/ibooks/${bookName}_${bookAuthor}.pdf`, "_blank");
+        try {
+            const response = await fetch(`/api/download/${bookId}`);
+            if (!response.ok) {
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"])({
+                    title: "Download failed",
+                    description: "Could not download the file."
+                });
+                return;
+            }
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.setAttribute("download", "book.pdf"); // Optionally set a better filename
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"])({
+                title: "Download failed",
+                description: "An error occurred."
+            });
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         type: "button",
@@ -300,7 +322,7 @@ function DownloadButton({ bookName, bookAuthor, fileUrl, fileType }) {
                 height: 20
             }, void 0, false, {
                 fileName: "[project]/components/books/DownloadButton.tsx",
-                lineNumber: 30,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -308,13 +330,13 @@ function DownloadButton({ bookName, bookAuthor, fileUrl, fileType }) {
                 children: "Download Book"
             }, void 0, false, {
                 fileName: "[project]/components/books/DownloadButton.tsx",
-                lineNumber: 31,
+                lineNumber: 46,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/books/DownloadButton.tsx",
-        lineNumber: 25,
+        lineNumber: 40,
         columnNumber: 5
     }, this);
 }

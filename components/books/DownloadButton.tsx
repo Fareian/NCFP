@@ -2,23 +2,38 @@
 import Image from "next/image";
 import { toast } from "@/hooks/use-toast";
 import { useFileSize } from "@/hooks/useFileSize";
+import { useRef } from "react";
 
 interface DownloadButtonProps {
-  bookName: string;
+  bookId: string;
   fileUrl: string;
   fileType?: string;
-  bookAuthor: string;
 }
 
-export default function DownloadButton({ bookName, bookAuthor, fileUrl, fileType }: DownloadButtonProps) {
+export default function DownloadButton({ bookId, fileUrl, fileType }: DownloadButtonProps) {
   const fileSize = useFileSize(fileUrl);
 
-  const handleClick = (e: React.MouseEvent) => {
+  const handleClick = async (e: React.MouseEvent) => {
     e.preventDefault();
     toast({ title: "Download started", description: "Your book is downloading." });
-    // Open the API download route in a new tab to trigger the download
-    window.open(`https://ik.imagekit.io/newCreation/books/ibooks/${bookName}_${bookAuthor}.pdf`, "_blank");
-
+    try {
+      const response = await fetch(`/api/download/${bookId}`);
+      if (!response.ok) {
+        toast({ title: "Download failed", description: "Could not download the file." });
+        return;
+      }
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "book.pdf"); // Optionally set a better filename
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      toast({ title: "Download failed", description: "An error occurred." });
+    }
   };
 
   return (
